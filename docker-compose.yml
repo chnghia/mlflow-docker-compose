@@ -36,8 +36,8 @@ services:
         restart: always
         image: mysql/mysql-server
         container_name: mlflow_db
-        ports:
-            - "3306:3306"
+        # ports:
+            # - "3306:3306"
         environment:
             - MYSQL_DATABASE=${MYSQL_DATABASE}
             - MYSQL_USER=${MYSQL_USER}
